@@ -5,28 +5,35 @@ body{
 	font-family: helvetica, arial, sans-serif;
 	color:#545257; /*changes color of the whole text*/
 	margin-top: 0;
+	background-color: #000;
+	background: url('../img/headerBlur.jpg') fixed;
 }
 #wrapper{
 	width:960px;
 	margin: 0 auto;
-	padding-left: 1%;
-	padding-right: 1%;
 	-webkit-box-shadow: 0px 0px 5px #ececec;
 	-moz-box-shadow:    0px 0px 5px #ececec;
-	box-shadow:         0px 0px 5px #ececec;
+	box-shadow:         0px 0px 20px #666;
+	background-color: #ececec;
 
 }
 /*-------------------------------------------  header -------------------------------------------------------*/
 
 header{
 	border-bottom: 1px solid #bbb8bf; /*changes color of border under project name*/
+	background: url('../img/header.jpg') top center scroll;
+	height: 495px;
+	width: 960px;
 }
 h1{
 	margin-top: 0;
-	padding-top: 10px;
+	padding: 30px 0 0 1%;
+	font-size: 4em;
+	color: #fff;
 }
 h2{
 	margin-top: 20px;
+	font-size: 2.5em;
 }
 /*-------------------------------------------  table -------------------------------------------------------*/
 table{
@@ -63,6 +70,7 @@ td:first-child{
 .main{
 
 	overflow: auto;
+	padding: 0 1%;
 	/*border-bottom: 1px solid #bbb8bf;*/
 }
 .main p{
@@ -71,19 +79,11 @@ td:first-child{
 	font-size: 1.4em;
 
 }
-.main figure{
-	float: right;
-	margin: 15px 0 20px 0;
-	width: 30%;
-
-}
-figure img{
-	width: 100%;
-}
 .sec{
 	clear: both;
 	margin-top: 40px;
-	
+	padding: 0 1%;
+
 }
 
 /*-------------------------------------------  links -------------------------------------------------------*/
@@ -110,7 +110,7 @@ footer{
 	@media only screen and (max-width: 959px) {
 		#wrapper{
 			width:98%;
-		}	
+		}
 	}
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -119,14 +119,8 @@ footer{
 			width:98%;
 
 		}
-		.main figure{
-			width: 35%;
-		}
-		.main figure img{
-			width: 100%;	
-		}
 		.main p{
-			width: 60%;	
+			width: 60%;
 		}
 		td{
 			width: 50%;
@@ -137,21 +131,14 @@ footer{
 	@media only screen and (max-width: 767px) {
 		#wrapper{
 			width: 95%;
-	
+
 		}
 		.main, header, h2{
 			padding-left: 1%;
 			padding-right: 1%;
 		}
-		.main figure{
-			width: 100%;
-			float: right;
-		}
 		.main p{
 			width: 98%;
-		}
-		.main figure img{
-			width: 100%;
 		}
 		td{
 			width: 50%;
@@ -178,12 +165,6 @@ footer{
 		#wrapper{
 			width: 96%;
 		}
-		figure {
-			display: none;
-		}
-		figcaption{
-			display: none;
-		}
 		.sec{
 			margin-top: 10px;
 		}
@@ -193,8 +174,6 @@ footer{
 		}
 		td{
 			width: 50%;
-			
+
 		}
 	}
-
-
